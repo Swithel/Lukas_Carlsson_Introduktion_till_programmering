@@ -11,7 +11,7 @@ public class TextPrinter {
     }
 
     public void addToArrayList(String input) {
-        if (input.equals("stop")) {
+        if (input.equals("stop") || input.equals("Stop") || input.equals("STOP")) {
             isRunning = false;
         } else {
             myArrayList.add(input);
