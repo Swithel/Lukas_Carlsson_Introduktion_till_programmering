@@ -23,9 +23,17 @@ public class TextPrinterMain {
         }
         int countChars = myPrinter.getCountedChars();
         int countLines = myPrinter.getCountedLines();
+        int countWords = myPrinter.getCountedWords();
+        String longestWord = myPrinter.getLongestWord();
 
         System.out.println("Du skrev: " + countChars + " antal tecken.");
 
         System.out.println("Du skrev: " + countLines + " antal rader.");
+
+        System.out.println("Du skrev: " + countWords + " antal ord.");
+
+        System.out.println("Det längsta ordet du skrev var: " + longestWord + "" +
+                "\nOch är " + longestWord.length() + " tecken långt.");
+
     }
 }

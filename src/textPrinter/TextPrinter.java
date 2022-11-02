@@ -1,6 +1,8 @@
 package textPrinter;
 
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Comparator;
 
 public class TextPrinter {
     private final ArrayList<String> myArrayList = new ArrayList<>();
@@ -32,5 +34,17 @@ public class TextPrinter {
 
     public int getCountedLines() {
         return myArrayList.size();
+    }
+
+    public int getCountedWords() {
+        String text = myArrayList.toString();
+        return text.split("\\s+").length; ////Skriver ut antal ord, separerade med blanksteg
+    }
+
+    public String getLongestWord() {
+        String text = myArrayList.toString();
+        return Arrays.stream(text.split(" "))
+                .max(Comparator.comparingInt(String::length)) //Finds the longest word in the string: text
+                .orElse(null).toString();
     }
 }

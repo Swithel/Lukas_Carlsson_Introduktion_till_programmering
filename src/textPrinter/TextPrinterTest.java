@@ -12,7 +12,7 @@ public class TextPrinterTest {
         countChars.addToArrayList("Morot och potatis.");
         countChars.addToArrayList("test");
         countChars.addToArrayList("Jag har 3203 kronor.");
-        countChars.addToArrayList("stop");
+        countChars.addToArrayList("Stop");
 
         int actual = countChars.getCountedChars();
         int expected = 42;
@@ -46,7 +46,7 @@ public class TextPrinterTest {
         countTogether.addToArrayList("KAN DU HÄMTA?");
         countTogether.addToArrayList("100900900......");
         countTogether.addToArrayList("   ");
-        countTogether.addToArrayList("stop");
+        countTogether.addToArrayList("STOP");
 
         int actual1 = countTogether.getCountedChars();
         int actual2 = countTogether.getCountedLines();
