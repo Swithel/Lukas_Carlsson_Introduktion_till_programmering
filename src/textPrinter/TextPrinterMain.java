@@ -32,8 +32,12 @@ public class TextPrinterMain {
 
         System.out.println("Du skrev: " + countWords + " antal ord.");
 
+        System.out.println();
+
         System.out.println("Det längsta ordet du skrev var: " + longestWord + "" +
-                "\nOch är " + longestWord.length() + " tecken långt.");
+                "\nOrdet är " + longestWord.length() + " tecken långt.");
+
+
 
     }
 }

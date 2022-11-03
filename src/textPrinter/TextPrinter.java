@@ -43,8 +43,14 @@ public class TextPrinter {
 
     public String getLongestWord() {
         String text = myArrayList.toString();
-        return Arrays.stream(text.split(" "))
+        String replace1 = text.replaceAll(",", " ");
+        String replace2 = replace1.replaceAll("]", " ");
+        String replace3 = replace2.replaceAll("\\[", " ");
+
+        return Arrays.stream(replace3.split(" "))
                 .max(Comparator.comparingInt(String::length)) //Finds the longest word in the string: text
-                .orElse(null).toString();
+                .orElse(null);
     }
+
+
 }

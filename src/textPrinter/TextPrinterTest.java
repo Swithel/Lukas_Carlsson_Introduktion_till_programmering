@@ -56,4 +56,6 @@ public class TextPrinterTest {
         Assertions.assertEquals(expected1, actual1);
         Assertions.assertEquals(expected2, actual2);
     }
+
+
 }
